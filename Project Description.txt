@@ -102,33 +102,106 @@ The key fact is that only one variable is involved. Univariate analysis can some
 But Still Univariate Analysis is considered to be one of the Most Essential steps in any Data Science or Machine Learning Project. Use the Distribution plots provided by seaborn library to check the distribution of Numerical Columns present in the Dataset. Also check the distribution for Categorical Columns using Pie charts, and Count plots again provided by the seaborn library. Generally use the Pie charts when you have very few categories in the categorical column. Whereas you use the count plots in cases where you have more number of categories in the categorical column present in the dataset. Now, as you have so much knowledge on performing univariate analysis. You will use a pie chart to plot the Smoker Column, as the Smoker column has only two values: Yes and No. Where “Yes”, means the patient is smoker, and “No” means that the patient is a non-smoker. You will see that only around 25% of the patients are smokers, rest of the patients are non-smokers. After that for plotting the Number of Children's Columns: - Using a Count plot, as the Children's Column can have values ranging from 0 to 5. Where 0 means that the Patient is not having any children, and 1 means the patient is having one child and so on. Now, you can see that Most of the patients do not have any child, and very few parents have 4 or 5 children. And for the Region column, you are again going to use the pie chart, As The Region column consists only of 4 values: Southeast, southwest, northeast, northwest. And It is clearly visible that all the 4 regions are having equal numbers of habitants. We have plotted all these three plots together using the subplots function in matplotlib library. Also, you have used various colors to make it look beautiful!!! Making Beautiful Charts is very important, so that the people can spend some more time finding insights on it. Check the distribution of Age, BMI and Expenses using the distribution plot provided by the seaborn Library. After taking a look at the distribution plotted by the distplot. You can say that you have an equal number of people of all ages. The BMI of the patients seems to be normally distributed where maximum people have bmi around 30. And very few people have less BMI around 10, similarly very few people have high BMI around 60. And Finally the Expenses column seems to be right skewed. Now, If you don’t understand what is skewness and How it can be a severe Problem. Pause this video and go to the Statistics and Probability Course, Learn about the Concept of Skewness and how to deal with it. As the Expenses Column is skewed in Nature, You can either transform this Column using log transformation or square root transformation and convert it into a Normal Distribution. Or else, you can leave it as it is and check the Results. If the Results are too poor, then In that case, you have to transform the Expenses Column using Log or Square root transformation. And If the Results are good, then leave it as it is. Looking at the Expenses column, You can see that most of the patients have Expenses around 5000 to 20,000 Whereas there are very few people who have expenses greater than 40,000. You can also study those Patients carefully, who have Very High Medical Expenses. And Try to understand the Factors which are affecting them so that to come up with better precautions for our patients. In the next video, you we will perform Bivariate Analysis. Bivariate Analysis is a Part of Data Visualization where we try to visualize the Impact of one variable on the other.
 ________________________________________________________________________________________________________________________________________________
 
+In this video, you are going to perform Bivariate Analysis on the dataset.
+
+Bivariate analysis is one of the simplest forms of quantitative analysis. It involves the analysis of two variables, for the purpose of determining the empirical relationship between them.
+Bivariate analysis can be helpful in testing simple hypotheses of association.
+If you want to learn more about Bivariate Analysis, you can pause the video, and go to the Data Visualization Course.
+Begin with Analysis: -
+
+Compare the Age and the Expenses of our patients using a scatter plot.
+
+To plot a scatter chart, you are going to use the plotly library that you imported in the beginning of this Module.
+
+The Reason why you are using Scatter plot using the plotly library is that, plotly provides you with an Interactive Chart, through which you can easily drill up and down, and extract information from the charts very easily.
+
+You can see the Tools available for a Plotly Chart by hovering over the Top-Right of the Chart.
+
+You can find Downloading Options, Zooming Options, Panning Options, Boxing Options etc.
+
+Look at scatter plot created using plotly.
+
+You can see that there is an increase in the expenses of the patients as the age is increasing. It is a clear pattern.
+
+But It is not expected to be the same for all the cases.
+
+Example: There can be some People who have Higher Ages, but lower Medical Expenses.
+
+This Pattern only gives you an Overall Idea about the Trend Hidden in the Data.
+
+The Major Advantage of plotly charts is that you can add some parameters such as Trendline, this trendline helps us to identify the Trend.
+
+Also, While hovering over the trendline shows the linear equation between age and expenses and the r2 value.
+
+Apart from that you can add Marginal Axes, where you can plot the Distribution of the Variables,
+
+For Example in this case, you are plotting the Violin Chart for the Expenses Variable.
+
+Compare the BMI and the expenses column using scatter plot from plotly again.
+
+Scatter plot: -
+
+You can see that most of the data is situated at the bottom of the Chart Indicating that People with High, Medium, or Low BMI can have Low Expenses. Which is an Irregular Pattern.
+
+If you take a look at the Trendline, It shows that If people have High BMI, their Medical Expenses would be High.
+
+So, you can conclude that with the increase in bmi, the expenses may increase but in very rare cases.
+
+You are going to understand the relationship between the Categorical variables and Numerical variables.
+
+First of all, you will check the impact of smoking and Number of children on the Medical expenses using a box plot from the seaborn library.
+
+Looking at the plot, you can see that having 4 or 5 children has a similar impact on expenses, to cap these values.
+
+Again, If you do not know about the concept of Capping, you can take a Pause and go back to the Data Cleaning Course.
+
+While smoking has a direct impact on expenses, That means the people who smoke have more expenses as compared to the people who do not smoke.
+
+Which is what you expected to be obvious because smokers would have more health issues and problems as compared to non-smokers.
+
+Hence, concluding that Smoking can be a very helpful factor for understanding and estimating the Health expenses for your patients.
+
+In the next video, you will learn about Multivariate analysis, Where you can involve any number of Variables for understanding the patterns hidden in your Data.
+________________________________________________________________________________________________________________________________________________
+
 
 ________________________________________________________________________________________________________________________________________________
 
-________________________________________________________________________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________________________
 
-________________________________________________________________________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________________________
 
-________________________________________________________________________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________________________
 
-________________________________________________________________________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________________________
 
-________________________________________________________________________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________________________
 
-________________________________________________________________________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________________________
 
+
 ________________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________________w
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________________________________________________
+
 
 ________________________________________________________________________________________________________________________________________________
