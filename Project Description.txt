@@ -164,7 +164,80 @@ Hence, concluding that Smoking can be a very helpful factor for understanding an
 In the next video, you will learn about Multivariate analysis, Where you can involve any number of Variables for understanding the patterns hidden in your Data.
 ________________________________________________________________________________________________________________________________________________
 
+In this video, you are going to perform Multivariate Analysis on the dataset.
 
+Multivariate analysis is based on the principles of multivariate statistics, which involves observation and analysis of more than one statistical outcome variable at a time.
+
+Create a scatter plot between age and expenses column, Specify the smoker column to impart color in your data points.
+
+If the patient is a smoker, he or she will be specified with Blue color, and if the patient is a non-smoker, then he or she will be specified with Red color.
+
+After that, add faceting layers. You can add faceting in both row and column side.
+
+You can add the “number of children” column as a facet in the row side. Whereas the “Region” column will be added as a facet in the column side.
+
+Now, you can see an Interesting Matrix type Chart.
+
+A separate Scatter Chart for Expenses vs Age where the Region is Southwest and the number of children is 0.
+
+You can see that you have a separate Scatter chart for all the possible combinations.
+
+Hence, you can easily find out the hidden patterns.
+
+If you look at the Charts Carefully, you can easily figure out that the Expenses of Smokers in most of the regions ranges from 20 thousands to 60 thousands.
+
+Whereas the Expenses of Non Smokers in most of the regions ranges from 10 thousands to 20 thousands.
+
+And Finally, If you look at the trendlines, you can see that In general if the age is less, the Expense would also be less.
+
+After that, again create a similar kind of scatter plot, you have to plot BMI in the place of age.
+
+Looking at the chart, you can clearly see that there is an increasing pattern for bmi as well.
+
+
+For smokers with less bmi, the expenses are around 20 thousand rupees.
+For smokers with high bmi, the expenses are around 50 thousand rupees.
+For non smokers, bmi is not a huge factor, their expenses ranges from 5k to 10k.
+You just found a very interesting and eye-opening fact from this data.
+Creating a bubble chart: -
+
+Use this Bubble Chart to represent the relation of expense with bmi, age and smoking.
+
+Again, If you do not know about Bubble Charts, then Don’t worry,
+
+Take a pause and go back to the Data Visualization Course, Miscellaneous Charts Section, Learn Bubble Charts.
+
+Looking at the chart: -
+
+It is clear that bmi is not a powerful indicator as people having less bmi also have high medical expenses and it is very clear from the chart that people who smoke definitely have high medical expenses.
+
+After that, you will also check the relationship between expenses, region and gender using the bar polar chart from plotly.
+
+Again, you can learn more about the Bar Polar Chart from the Data Visualization Course.
+
+Looking at the chart: -
+
+You can easily understand that the southeast region has higher medical expenses compared to all the other regions and also the males have higher expenses in general in almost all the regions.
+
+Check the impact of Medical Expenses in the different regions.
+
+Use the group by function and group the data using the region column and use the aggregate function and specify the minimum, mean and maximum aggregation of expenses.
+
+These Aggregations will help to understand whether you should perform Capping in the Region Column or not.
+
+Now, you can notice that the maximum expenses are in the southeast region while other regions also have comparably high expenses.
+
+So, there is no huge difference between the expenses in any region.
+
+But, if you take a look at the Mean of the Expenses, the Expenses in the Southeast Region is very high, whereas in all the other regions, It is very low.
+
+Hence, concluding that the People in the Southeast region have very high expenses as compared to people living in other regions.
+
+So, you can cap all the Other three Regions that is the Southwest Region, the Northeast Region, and the Northwest Region, as the Expenses in these three regions are very similar to each other.
+
+Finally, after a lot of Knee-breaking analysis. Coming to a conclusion that somehow all the columns are important and shall not remove any of these columns from the dataset.
+
+In the next video, you will prepare your dataset for modelling by performing some processing on the dataset.
 ________________________________________________________________________________________________________________________________________________
 
 
